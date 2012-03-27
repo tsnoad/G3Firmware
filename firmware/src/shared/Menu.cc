@@ -69,10 +69,10 @@ bool queryExtruderParameter(uint8_t parameter, OutPacket& responsePacket) {
 }
 
 void SplashScreen::update(LiquidCrystal& lcd, bool forceRedraw) {
-	static PROGMEM prog_uchar splash1[] = "                ";
-	static PROGMEM prog_uchar splash2[] = " Thing-O-Matic  ";
-	static PROGMEM prog_uchar splash3[] = "   ---------    ";
-	static PROGMEM prog_uchar splash4[] = "                ";
+	static PROGMEM prog_uchar splash1[] = "                    ";
+	static PROGMEM prog_uchar splash2[] = "   Thing-O-Matic    ";
+	static PROGMEM prog_uchar splash3[] = "     ---------      ";
+	static PROGMEM prog_uchar splash4[] = "                    ";
 
 
 	if (forceRedraw) {
@@ -107,10 +107,10 @@ void JogMode::reset() {
 }
 
 void JogMode::update(LiquidCrystal& lcd, bool forceRedraw) {
-	static PROGMEM prog_uchar jog1[] = "Jog mode: ";
-	static PROGMEM prog_uchar jog2[] = "  Y+          Z+";
-	static PROGMEM prog_uchar jog3[] = "X-  X+    (mode)";
-	static PROGMEM prog_uchar jog4[] = "  Y-          Z-";
+	static PROGMEM prog_uchar jog1[] = "  Jog mode:   ";
+	static PROGMEM prog_uchar jog2[] = "    Y+          Z+  ";
+	static PROGMEM prog_uchar jog3[] = "  X-  X+    (mode)  ";
+	static PROGMEM prog_uchar jog4[] = "    Y-          Z-  ";
 
 	static PROGMEM prog_uchar distanceShort[] = "SHORT";
 	static PROGMEM prog_uchar distanceLong[] = "LONG";
