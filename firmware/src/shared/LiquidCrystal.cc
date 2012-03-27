@@ -76,7 +76,7 @@ void LiquidCrystal::init(uint8_t fourbitmode, Pin rs, Pin rw, Pin enable,
   else 
     _displayfunction = LCD_8BITMODE | LCD_1LINE | LCD_5x8DOTS;
   
-  begin(16, 1);  
+  begin(20, 1);  
 }
 
 void LiquidCrystal::begin(uint8_t cols, uint8_t lines, uint8_t dotsize) {
@@ -169,7 +169,7 @@ void LiquidCrystal::home()
 
 void LiquidCrystal::setCursor(uint8_t col, uint8_t row)
 {
-  int row_offsets[] = { 0x00, 0x40, 0x10, 0x50 };
+  int row_offsets[] = { 0x00, 0x40, 0x14, 0x54 };
   if ( row > _numlines ) {
     row = _numlines-1;    // we count rows starting w/0
   }

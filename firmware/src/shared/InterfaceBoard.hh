@@ -30,7 +30,7 @@
 /// Character LCD screen geometry
 ///
 /// Porting Note: Screens may need to be rewritten to support different sizes.
-#define LCD_SCREEN_WIDTH        16
+#define LCD_SCREEN_WIDTH        20
 #define LCD_SCREEN_HEIGHT       4
 
 
