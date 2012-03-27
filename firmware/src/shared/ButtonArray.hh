@@ -30,8 +30,8 @@ public:
                 ZPLUS           = 3,
                 YMINUS          = 4,
                 YPLUS           = 5,
-                XMINUS          = 6,
-                XPLUS           = 7,
+                XMINUS          = 7,
+                XPLUS           = 6,
                 CANCEL          = 11,
                 OK              = 12
         };
